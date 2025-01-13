@@ -1,0 +1,63 @@
+/* styles.css */
+
+/* Reset默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* 设置主容器为 flexbox */
+.container {
+    display: flex;
+    height: 100vh; /* 设置页面高度为100%视口高度 */
+}
+
+/* 侧栏样式 */
+.sidebar {
+    width: 250px; /* 侧栏宽度 */
+    background-color: #333; /* 侧栏背景色 */
+    color: #fff; /* 文字颜色 */
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #ff9800;
+}
+
+/* 主内容区样式 */
+.main-content {
+    flex: 1; /* 主内容区域占用剩余空间 */
+    padding: 20px;
+    background-color: #fff; /* 主内容区域背景色 */
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
